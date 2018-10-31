@@ -3,10 +3,11 @@ Run celery tasks like your server same code and debug
 
 ### Using
 
-In code, when your server is started, call run function:
+In code, when your server is started, call ``run`` function:
 
 ```python
 import celery_local
+
 celery_local.run(app, filter=["my_task"], first_start=True)
 ```
 
