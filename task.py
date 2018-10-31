@@ -9,6 +9,9 @@ class Task:
         self.method_name = method_name
 
         module = import_module(module_path)
+        if not hasattr(module, method_name):
+            raise AttributeError("No task {}".format(method_path))
+
         method_task = getattr(module, method_name)
         self.method = method_task.run
 
