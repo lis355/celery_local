@@ -1,3 +1,3 @@
-from celery_local.celery_local import CeleryLocal
+from celery_local.run import run
 
-__all__ = ['CeleryLocal']
+__all__ = ["run"]
